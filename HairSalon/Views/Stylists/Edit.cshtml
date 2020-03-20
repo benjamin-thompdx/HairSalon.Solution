@@ -5,6 +5,7 @@
 @model HairSalon.Models.Stylist
 
 <h2>Edit</h2>
+<br>
 
 <h4>Edit this Stylist: @Html.DisplayFor(model => model.Name)</h4>
 
@@ -14,7 +15,11 @@
 
     @Html.LabelFor(model => model.Name)
     @Html.EditorFor(model => model.Name)
-
+    <br>
+    @Html.LabelFor(model => model.Specialty)
+    @Html.EditorFor(model => model.Specialty)
+    <br>
     <input type="submit" value="Save" />
 }
+<br>
 <p>@Html.ActionLink("Back to stylists", "Index")</p>
