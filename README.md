@@ -64,7 +64,7 @@ _Install MySQL | Windows 10:_
   
   > CREATE TABLE `stylists` (`StylistId` PRIMARY KEY, `Name` VARCHAR(255), `Specialty` VARCHAR(255), `Date_Hired` VARCHAR(255));
 
-  > CREATE TABLE `clients` (`ClientId` PRIMARY KEY, `Name` VARCHAR(255), `PhoneNumber` VARCHAR(255), `Email` VARCHAR(255), `StylistId` INT));
+  > CREATE TABLE `clients` (`ClientId` PRIMARY KEY, `Name` VARCHAR(255), `Phone_Number` VARCHAR(255), `Email` VARCHAR(255), `StylistId` INT));
 
 _Note For Editors:_ 
 
