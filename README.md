@@ -1,4 +1,4 @@
-# _Hair Salon Business Tracker_
+# _Eau Claire's Salon Business Tracker_
 
 #### _A C# MVC web application for managing employees and clients._, _Mar. 20, 2020_
 
