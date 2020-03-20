@@ -1,6 +1,6 @@
 # _Hair Salon Business Tracker_
 
-#### _A C# MVC web application for managing employees and clients._, _Mar. 18, 2020_
+#### _A C# MVC web application for managing employees and clients._, _Mar. 20, 2020_
 
 #### By _**Benjamin Thom**_
 
