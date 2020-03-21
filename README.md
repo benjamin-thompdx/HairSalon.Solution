@@ -12,10 +12,14 @@ _A web application for managing Eau Claire's Salon's employees and their respect
 
 | Behavior | Input | Output |
 |---|:---:|:---:|
-||||
-||||
-||||
-||||
+|User visits homepage and the application displays a welcome massage, a link to view all stylists, and a link to view all clients|User enters url into web browser: http://localhost:5000/|"Welcome to the Eau Claire's Salon Business Tracker!", View all stylists(http://localhost:5000/Stylists), View all clients(http://localhost:5000/Clients)|
+|User clicks on "view all stylists" link and the application displays a list of stylists or if no stylists have been added yet the application will dsplay the following message: "No stylists have been added yet!" and two links: link #1 will allow the user to add a new stylist, and link #2 will route the user to the homepage|User clicks View all stylists link|"No stylists have been added yet!", Add new stylist(http://localhost:5000/Stylists/Create), Home(http://localhost:5000/)|User enters url into web browser: http://localhost:5000/|
+|User clicks on "Add new stylist" and the application displays a new stylist form, a button to confirm details and add new stylist, and a link to show all stylists|Name:, Specialty:, Date_Hired:|"Bill Throngood", "Long & Curly Hair", "07/20/2009"|
+|User fills out new stylist form, presses add new stylist button and is routed back to the stylists page where the can view all stylists, click on stylist for additonal details, or click on the "Home" link to return to the homepage|User clicks new stylist button|"Bill Throngood", Add new stylist(http://localhost:5000/Stylists/Create), Home(http://localhost:5000/)|
+|User clicks on Stylist name to view additional details and the application displays stylist details and three links: link #1 routes user back to stylists page, link #2 routes user to edit stylist page, and link #3 routes user to delete stylist page|User clicks "Bill Throngood"|Name: "Bill Throngood", Specialty: "Long & Curly Hair", Date Hired: "07/20/2009", Back to stylists(http://localhost:5000/Stylists), Edit Stylist(http://localhost:5000/Stylists/Edit/9), Delete Stylist(http://localhost:5000/Stylists/Delete/9)|
+|User clicks on "view all clients" link and the application displays a list of clients or if no clients have been added yet the application will dsplay the following message: "No clients have been added yet! Note: A stylist must be selected to add a new client" and two links: link #1 will allow the user to add a new stylist, and link #2 will route the user to the homepage|user clicks View all clients link|"No stylists have been added yet!", Add new stylist(http://localhost:5000/Clients/Create), Home(http://localhost:5000/)|
+|User clicks on "Add new client" and the application displays a new client form, a button to confirm details and add new client, and a link to show all clients. NOTE: if user does not specify a stylist within the new client form, the entry will not be saved|Name:, Phone_Number:, Email:, Stylist:|"Tom Smith", "(775)544-2323", "Tim@mail.com", "Bill Throngood"|
+|User fills out new client form, presses add new client button and is routed back to the clients page where the can view all clients or click on the "Home" link to return to the homepage|User clicks "Tom Smith| Stylist: Bill Throngood"|Name: "Tom Smith", Phone_Number:"(775)544-2323", Email:"Tim@mail.com", Stylist:"Bill Throngood", Back to clients(http://localhost:5000/Clients), Edit Client(http://localhost:5000/Clients/Edit/9), Delete Stylist(http://localhost:5000/Clients/Delete/9)|
 
 ## Setup/Installation Requirements
 
