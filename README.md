@@ -75,9 +75,9 @@ _Install MySQL | Windows 10:_
 
   > CREATE TABLE `clients` (
       `ClientId` INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
-      `Name` VARCHAR(255),
-      `Phone_Number` VARCHAR(255),
-      `Email` VARCHAR(255),
+      `Name` VARCHAR(255) DEFAULT NULL,
+      `Phone_Number` VARCHAR(255) DEFAULT NULL,
+      `Email` VARCHAR(255) DEFAULT NULL,
       `StylistId` INT(11) DEFAULT '0'
     );
 
