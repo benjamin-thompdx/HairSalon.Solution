@@ -66,9 +66,18 @@ _Install MySQL | Windows 10:_
 
   > USE `benjamin_thom`;
   
-  > CREATE TABLE `stylists` (`StylistId` PRIMARY KEY, `Name` VARCHAR(255), `Specialty` VARCHAR(255), `Date_Hired` VARCHAR(255));
+  > CREATE TABLE `stylists` 
+    (`StylistId` INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT, 
+    `Name` VARCHAR(255) DEFAULT NULL,
+    `Specialty` VARCHAR(255) DEFAULT NULL,
+    `Date_Hired` VARCHAR(255) DEFAULT NULL);
 
-  > CREATE TABLE `clients` (`ClientId` PRIMARY KEY, `Name` VARCHAR(255), `Phone_Number` VARCHAR(255), `Email` VARCHAR(255), `StylistId` INT));
+  > CREATE TABLE `clients` 
+    (`ClientId` INT(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    `Name` VARCHAR(255),
+    `Phone_Number` VARCHAR(255),
+    `Email` VARCHAR(255),
+    `StylistId` INT(11) DEFAULT '0');
 
 _Note For Editors:_ 
 
